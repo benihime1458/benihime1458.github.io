@@ -1307,7 +1307,7 @@ input, select, textarea {
 	body {
 		background-image: url("images/overlay.png"), url("images/climbingwall.jpg");
 		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
+		background-size:cover;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
@@ -2192,4 +2192,19 @@ input, select, textarea {
 
 .contact-links a {
 	color: inherit;
+}
+
+.image-gallery {
+	position: relative;
+	width: 100%;
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-gallery img{
+	height: 47%;
+	width: 47%;
+	max-height: 400px;
 }
